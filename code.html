@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>活动报名</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/quote.js" defer="defer" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="block" id="ticketTypesBlock">
+			<div class="block-title">选择票种</div>
+			<div class="block-body" id="ticketTypesList">
+			</div>
+		</div>
+		<div class="block">
+			<div class="block-title">购票人信息</div>
+			<div class="block-body">
+				<p>手机号</p>
+				<div class="block-input">
+					<input type="text" name="buyerPhone" id="buyerPhone" placeholder="请输入你的手机号，将用于接收出票短信">
+				</div>
+				<p>电子邮箱</p>
+				<div class="block-input">
+					<input type="text" name="buyerEmail" id="buyerEmail" placeholder="请输入你的电子邮件，将用于接收出票邮件">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="total">
+			<div class="votes">
+				<span>共</span><span id="votes">0</span><span>张票</span>
+			</div>
+			<div class="total-price">
+				<span>合计</span><span id="price" data-price="0.">00</span><span>元</span>
+			</div>
+		</div>
+		<div class="func"><button onclick="submitOrder()">立即支付</button></div>
+	</div>
+</body>
+</html>

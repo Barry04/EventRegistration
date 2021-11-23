@@ -1,0 +1,212 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(242, 242, 242);
+}
+
+.clearfix::after {
+	content: "";
+	display: table-cell;
+	clear: both;
+}
+
+input::-webkit-input-placeholder {
+	color: rgb(160, 160, 160);
+}
+
+input:focus {
+	outline-style: none;
+}
+
+.hr {
+	border: none;
+	height: 1px;
+	background-color: #aab2bd;
+}
+
+.content {
+	width: 100%;
+	min-width: 550px;
+	background: rgb(242, 242, 242);
+	margin-bottom: 100px;
+}
+
+.content .block {
+	width: 100%;
+}
+
+.content .block .block-title {
+	font-size: 24px;
+	color: rgb(160, 160, 160);
+	padding: 16px;
+}
+
+.content .block .block-body {
+	padding: 24px;
+	background: #fff;
+}
+
+.content .block .block-body .ticket-types-item {
+	overflow: hidden;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg {
+	float: left;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p {
+	line-height: 36px;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p:nth-child(1) {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p:nth-child(2) {
+	font-size: 18px;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p:nth-child(3) {
+	font-size: 18px;
+	color: #4eb8ff;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p:nth-child(3):first-letter {
+	font-size: 24px;
+}
+
+.content .block .block-body .ticket-types-item .ticket-types-msg p:nth-child(3) span {
+	
+	color: red;
+}
+
+.content .block .block-body .ticket-types-item .quantity {
+	float: right;
+	display: flex;
+	width: 240px;
+	height: 110px;
+	align-items: center;
+	justify-content: center;
+}
+
+.content .block .block-body .ticket-types-item .quantity::before {
+	content: '';
+}
+
+.content .block .block-body .ticket-types-item .quantity .quantity-func {
+	display: flex;
+	width: 180px;
+	height: 44px;
+}
+
+.content .block .block-body .ticket-types-item .quantity .quantity-func .quantity-block {
+	text-align: center;
+	width: 60px;
+	border: 1px solid #aab2bd;
+	line-height: 38px;
+}
+
+.content .block .block-body .ticket-types-item .quantity .quantity-func .add span {
+	color: #40bcff;
+}
+
+.content .block .block-body .ticket-types-item .quantity .quantity-func span {
+	font-size: 32px;
+	user-select: none;
+}
+
+.content .block .block-body>p {
+	font-size: 24px;
+	margin-top: 16px;
+	font-weight: bold;
+	background: #fff;
+}
+
+.content .block .block-body .block-input {
+	margin-top: 16px;
+	border: 1px solid #aab2bd;
+	border-radius: 8px;
+	height: 48px;
+}
+
+.content .block .block-body .block-input input {
+	background: rgb(252, 252, 252);
+	padding: 8px;
+	width: calc(100% - 16px);
+	font-size: 24px;
+	height: 32px;
+	border: none;
+	border-radius: 8px;
+}
+
+.content .block .block-body .block-radio {
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+.content .block .block-body .block-radio label{
+	font-size: 24px;
+	margin-right: 40px;
+}
+.content .block .block-body .block-radio label input{
+	font-size: 24px;
+	width: 20px;
+	height: 20px;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	min-width: 550px;
+	background: rgb(255, 255, 255);
+}
+
+.footer .total {
+	float: left;
+	padding: 16px 32px;
+	line-height: 32px;
+}
+.footer .total .votes {
+	font-size: 18px;
+}
+.footer .total .votes #votes{
+	color: rgb(22,184,255);
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.footer .total .total-price {
+	font-size: 20px;
+}
+.footer .total .total-price #price{
+	color: rgb(22,184,255);
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.footer .total .total-price #price::before{
+	content: attr(data-price);
+	font-size: 24px;
+}
+.footer .func{
+	float: right;
+	width: 240px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer .func button{
+	width: 180px;
+	height: 60px;
+	font-size: 32px;
+	color: #F0F0F0;
+	border:1px solid rgb(22,184,255);
+	background-color: rgb(22,184,255);
+}
